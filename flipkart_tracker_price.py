@@ -34,7 +34,7 @@ def mail_it(cost,heading,mail_id,passw):
     serv.ehlo()
     #print('Hello')
     try:
-        serv.login(mail_id,password='passw')
+        serv.login(mail_id,password=passw)
         subject = 'Falling prices!!'
         body = 'Prices are down!! \n\n Product: ' + str(heading) + ' Price now: ' + str(cost)
 
